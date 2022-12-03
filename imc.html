@@ -1,0 +1,76 @@
+<meta charset="UTF-8">
+
+// calcular imc
+
+<h1> CALCULAR IMC </h1>
+
+<script>
+
+function saltarlinea() {
+
+	document.write("<br>");
+	
+}
+
+function imprimir(frase) {
+
+	document.write(frase)
+	saltarlinea();	
+}
+
+function mostrarAlerta(mensaje) {
+
+	alert(mensaje)
+	saltarlinea();	
+}
+
+var peso=71
+var altura=1.70
+var imc=peso/(altura*altura)
+
+function calcularimc(peso,altura) {
+	imc=peso/(altura*altura);
+	return(imc);
+		
+}
+calcularimc(peso,altura)
+
+// mostrarAlerta("Nuestra diferencia de edad es "+ (amigo1-amigo2))
+imprimir("El IMC es "+ imc)
+
+
+var pesoF=75
+var alturaF=1.90
+var nombre
+
+calcularimc(pesoF, alturaF)
+imprimir("El IMC de F es "+ imc)
+
+
+// todo en la función
+function calcularImprimirImc(peso,altura,nombre) {
+	imc=peso/(altura*altura);
+	imprimir("El IMC de " + nombre + " es "+ imc);
+		
+}
+
+calcularImprimirImc(70,1.70, "Cristian")
+
+// promedio
+imccristian=calcularimc(70,1.70)
+imcfelipe=calcularimc(75,1.90)
+imprimir("El promedio IMC de C y F es: " + imccristian+imcfelipe/2);
+imprimir("El promedio IMC de C y F es: " + calcularimc(70,1.70)+calcularimc(75,1.90)/2);	
+
+
+// ingresando paramentros en pantalla
+
+nombre= prompt("ingrese su nombre")
+peso= prompt(nombre+ " ingrese su peso")
+altura= prompt(nombre+ " ingrese su altura")
+imprimir(nombre +"  Su IMC es: " + imc);
+
+
+
+
+</script>;
