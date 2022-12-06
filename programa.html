@@ -77,7 +77,38 @@ document.write("<br>");
 var nombre1 = "Jimena";
 var nombre2 = "Paola";
 var nombre3 = "Laura";
+
+var saltolinea = "<br><br>";
+document.write (saltolinea)
 document.write ("promedio de edad de " + nombre1 + ", "+nombre2 + " y " + nombre3 + " es " + Math.round(promedio)); 
+
+// aprendiendo funciones
+
+function saltarlinea() {
+
+	document.write("<br>");
+	document.write("<br><br>");
+	
+}
+
+saltarlinea();
+document.write("funcion saltar de linea "); 
+saltarlinea();
+
+
+
+// funciones con parametros
+
+function imprimir(frase) {
+
+	document.write(frase)
+	saltarlinea();	
+}
+
+imprimir("funcion con parametros y funciones anidadas "); 
+document.write("<br>");
+imprimir("promedio de edad de " + nombre1 + ", "+nombre2 + " y " + nombre3 + " es " + Math.round(promedio)); 
+saltarlinea();
 
 
 </script>;

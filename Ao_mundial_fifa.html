@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+// Calcula ao en que hubo mundial fifa
+
+<h1> AO QUE HUBO MUNDIAL FIFA </h1>
+
+<script>
+
+function saltarlinea() {
+
+	document.write("<br>");
+	
+}
+
+function imprimir(frase) {
+
+	document.write(frase)
+	saltarlinea();	
+}
+
+var aoMundial=1930;
+var limite=parseInt(prompt("Ingrese el ao limite para calculo"));
+
+while (aoMundial<=limite) {
+	imprimir("Hubo mundial en el ao: " + aoMundial);
+	aoMundial=aoMundial+4;
+}
+
+imprimir("final")
+
+</script>;

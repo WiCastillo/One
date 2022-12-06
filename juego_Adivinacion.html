@@ -33,5 +33,35 @@ else {
 }
 
 
+// cambios para que ingresen 3 intentos si no aciertan
+
+alert("tres intentos")
+
+var intentos=3
+var contador=1
+
+while(contador<=intentos) {
+
+	var numeroIngresado=parseInt(prompt("ingreso un numero entre 0 y 10. Intento # "+contador))
+
+if (numeroPensado==numeroIngresado) {
+	alert("usted acerto. en el intento "+contador+ " el numero pensado era "+ numeroPensado);
+	break;
+}
+
+else {
+	//alert("usted no acerto");
+
+
+}
+contador++;
+
+}
+
+if (numeroPensado!=numeroIngresado) {
+	imprimir("usted no acerto, el numero pensado era "+ numeroPensado);
+}
+
+imprimir("FIN")
 
 </script>;
